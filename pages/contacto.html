@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="keywords" content="panaderia, cocu, pan, pastel, pasteleria" />
+    <meta name="description" content="Pagina web de panaderia cocu" />
     <meta author="Castillo Pablo" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/994041f941.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Panaderia Cocu</title>
   </head>
   <body>
@@ -32,7 +36,7 @@
           <div class="collapse navbar-collapse" id="navbarPlantilla">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="historia.html">Historia</a>
@@ -53,7 +57,68 @@
         </div>
       </nav>
     </header>
-    <main class="container my-5"></main>
-    <script src="js/bootstrap.min.js"></script>
+    <main class="container my-5">
+      <h1 class="display-1 text-center my-5">Consultas</h1>
+      <hr />
+      <article class="row">
+        <div class="col-sm-12 col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label"
+                >Nombre y apellido</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                required
+                maxlength="30"
+                minlength="6"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-6"></div>
+      </article>
+    </main>
+    <footer class="bg-dark text-light py-4">
+      <section class="container">
+        <article class="row">
+          <div class="col-sm-12 col-md-4">
+            <img src="../img/cocu_logo-450.png" width="140px" alt="logoCocu" />
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <h5>Horario de atencion:</h5>
+            <ul>
+              <li>Lunes a viernes: 09hs-18hs</li>
+              <li>Sabado, domingo y feriados: 09hs-14hs</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <h5>Seguinos en nuestras redes:</h5>
+            <!-- fa-2x agranda el tamaño de los iconos -->
+            <a href="https://www.facebook.com" target="_blank" class="me-2"
+              ><i class="fab fa-facebook-square fa-2x text-light"></i
+            ></a>
+            <a href=""
+              ><i class="fab fa-twitter-square fa-2x text-light"></i
+            ></a>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
